@@ -11,7 +11,7 @@ public class LoginTest extends iPhoneNavigationHelper {
     public void loginSuccessfully() {
         waitForVisible(LoginLocators.emailTextInput);
         // Input valid email and password
-        getWebElement(LoginLocators.emailTextInput).sendKeys("automation@groupmetest.com");
+        getWebElement(LoginLocators.emailTextInput).sendKeys("automation@email.com");
         click(LoginLocators.continueButton);
         getWebElement(LoginLocators.passwordInput).sendKeys("p@ssw0rd");
         click(LoginLocators.loginButton);
@@ -66,7 +66,7 @@ public class LoginTest extends iPhoneNavigationHelper {
     @Test
     public void incorrectPassword() {
         // Input valid email
-        getWebElement(LoginLocators.emailTextInput).sendKeys("automation@groupmetest.com");
+        getWebElement(LoginLocators.emailTextInput).sendKeys("automation@email.com");
         click(LoginLocators.continueButton);
 
         // Input no password
@@ -85,7 +85,7 @@ public class LoginTest extends iPhoneNavigationHelper {
     @Test
     public void forgotPassword() {
         // Input valid email
-        getWebElement(LoginLocators.emailTextInput).sendKeys("automation@groupmetest.com");
+        getWebElement(LoginLocators.emailTextInput).sendKeys("automation@email.com");
         click(LoginLocators.continueButton);
 
         // Click forgot password
